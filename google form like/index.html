@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Contact Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact Information Form</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g., John Doe" autocomplete="name" required />
+
+        <label for="gender">Gender</label>
+        <div class="radio-group" aria-labelledby="gender">
+          <label><input type="radio" name="gender" value="Male" required /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+          <label><input type="radio" name="gender" value="Prefer not to say" /> Prefer not to say</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g., +1234567890" autocomplete="tel" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="e.g., john@example.com" autocomplete="email" required />
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter full address here..." autocomplete="street-address" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Professional Info</legend>
+
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" placeholder="e.g., ABC Pvt. Ltd." autocomplete="organization" />
+
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option value="" disabled selected>-- Select Department --</option>
+          <option value="HR">HR</option>
+          <option value="Sales">Sales</option>
+          <option value="Development">Development</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Others">Others</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
